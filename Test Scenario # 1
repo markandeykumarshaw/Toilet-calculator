@@ -1,0 +1,13 @@
+Feature:	Calculating Number of Toilet facilities 
+			
+		
+				
+			Scenario Outline:	Calculates number of toilet facilities required for a Museum with capacity of 100 people.
+			
+				Given	user is on "Toilet Calculator" page		
+				When	user selects  "Yes" on the radio button on field "Is the number of people for the building known?"		  
+				And 	user selects "MUSEUM" from the dropdown on field "Select the building use"
+				And		user enters "100" against field "Enter the number of people"
+				And 	user clicks on "Submit"
+				Then 	details for "Calculated number of toilet facilities" should display
+				
